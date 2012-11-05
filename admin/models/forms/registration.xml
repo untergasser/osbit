@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form
+	addrulepath="/administrator/components/com_lectuermanager/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="ID"
+			type="hidden"
+		/>
+	</fieldset>
+</form>

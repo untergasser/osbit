@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form
+	addrulepath="/administrator/components/com_lectuermanager/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="ID"
+			type="hidden"
+		/>
+		<field
+			name="firstName"
+			type="text"
+			label="COM_OSBIT_USER_FIELD_FIRST_NAME_LABEL"
+			description="COM_OSBIT_USER_FIELD_FIRST_NAME_DESC"
+			size="50"
+			required="true"
+			default=""
+		/>
+		<field
+			name="lastName"
+			type="text"
+			label="COM_OSBIT_USER_FIELD_LAST_NAME_LABEL"
+			description="COM_OSBIT_USER_FIELD_LAST_NAME_DESC"
+			size="50"
+			required="true"
+			default=""
+		/>
+<!-- @TODO: show username here and give the admins the posibillity to change the password -->
+		<field
+			name="email"
+			type="text"
+			label="COM_OSBIT_USER_FIELD_EMAIL_LABEL"
+			description="COM_OSBIT_USER_FIELD_EMAIL_DESC"
+			size="100"
+			required="false"
+			default=""
+		/>
+		<field
+			name="school"
+			type="text"
+			label="COM_OSBIT_USER_FIELD_SCHOOL_LABEL"
+			description="COM_OSBIT_USER_FIELD_SCHOOL_DESC"
+			size="100"
+			required="true"
+			default=""
+		/>
+		<field
+			name="class"
+			type="text"
+			label="COM_OSBIT_USER_FIELD_CLASS_LABEL"
+			description="COM_OSBIT_USER_FIELD_CLASS_DESC"
+			size="100"
+			required="true"
+			default=""
+		/>
+		<field
+			name="hasRegistered"
+			type="list"
+			label="COM_OSBIT_USER_FIELD_HAS_REGISTERED_LABEL"
+			description="COM_OSBIT_USER_FIELD_HAS_REGISTERED_DESC"
+			required="true"
+			size="1"
+			default="0"
+		>
+			<option value="0">
+				JNO</option>
+			<option value="1">
+				JYES</option>
+		</field>
+	</fieldset>
+</form>

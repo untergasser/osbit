@@ -1,0 +1,5 @@
+﻿Befehle für die CMD:
+
+D:\Users\Mathias\workspace>mklink /d  D:\Users\Mathias\workspace\joomla_de\administrator\components\com_osbit D:\Users\Mathias\workspace\com_osbit\admin
+D:\Users\Mathias\workspace>mklink /d  D:\Users\Mathias\workspace\joomla_de\components\com_osbit D:\Users\Mathias\workspace\com_osbit\site
+D:\Users\Mathias\workspace>mklink /d  D:\Users\Mathias\workspace\joomla_de\media\com_osbit D:\Users\Mathias\workspace\com_osbit\media

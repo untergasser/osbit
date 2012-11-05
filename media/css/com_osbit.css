@@ -1,0 +1,281 @@
+﻿/**
+ * @version		1.0.0
+ * @package		Joomla
+ * @subpackage	OSBIT
+ * @copyright	(C) 2010 - 2012 Mathias Gebhardt
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/*============================================================================
+    Head
+=============================================================================*/
+
+.osbit_table {
+	width: 100%;
+	border-collapse: separate;
+	border: 0 none #FFF;
+}
+
+.osbit_head_headding {
+	padding: 2px;
+	text-align: center;
+	border-width: 2px 2px 0px;
+	border-style: solid;
+	border-color: #999;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-bottom-top-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.osbit_head_headding h1 {
+	text-align: center;
+}
+
+.osbit_head_nav {
+	padding: 2px;
+	text-align: left;
+	border-width: 0px 2px 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+.osbit_head_nav_tr {
+	background-repeat: repeat-x;
+	background-image: url(../images/middle.png);
+}
+
+.osbit_head_arrow, .osbit_head_arrow_gn, .osbit_head_left,
+.osbit_head_left_gn, .osbit_head_middle, .osbit_head_middle_gn,
+.osbit_head_button{
+	height: 24px;
+	width: 24px;
+	border: 0 none #FFF;
+	background-repeat: no-repeat;
+}
+
+.osbit_head_arrow {
+	background-image: url(../images/next.png);
+}
+
+.osbit_head_arrow_gn {
+	background-image: url(../images/next_gn.png);
+}
+
+.osbit_head_left, .osbit_head_left_gn, .osbit_head_middle, .osbit_head_middle_gn {
+	width: 125px;
+	padding: 0px 1px 0px 6px;
+}
+
+.osbit_head_left {
+	background-image: url("../images/left.png");
+}
+
+.osbit_head_left_gn {
+	background-image: url("../images/left_gn.png");
+}
+
+.osbit_head_middle {
+	background-image: url("../images/middle.png");
+}
+
+.osbit_head_middle_gn {
+	background-image: url("../images/middle_gn.png");
+}
+
+.osbit_head_button {
+	color: #000;
+	text-align: right;
+	vertical-align: middle;
+	padding: 0;
+}
+
+.osbit_head_button_prev {
+	background: url("../images/button_prev.png") no-repeat;
+}
+
+.osbit_head_button_next {
+	background: url("../images/button_next.png") 100% 0 no-repeat;
+}
+
+.osbit_head_button_reset {
+	background: url("../images/button_reset.png") 100% 0 no-repeat;
+}
+
+.osbit_head_button .prev {
+	padding-left: 28px;
+	text-align: right;
+	color: #000;
+	margin-right: 10px;
+}
+
+.osbit_head_button .next, .osbit_head_button .reset {
+	padding-right: 28px;
+	text-align: right;
+	color: #000;
+}
+
+/* .osbit_head_button a { */
+/* 	height: 24px; */
+/* 	vertical-align: top; */
+/* 	background-image: url("../images/middle.png"); */
+/* } */
+
+/*=============================================================================
+    Foot
+=============================================================================*/
+
+.osbit_foot {
+	padding: 2px;
+	font-size: 0.8em;
+	color: #999;
+	text-align: center;
+	border-width: 0 2px 2px;
+	border-style: solid;
+	border-color: #999;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/*=============================================================================
+    Step X: CSS for all steps
+=============================================================================*/
+
+.osbit_stepX_td {
+	padding: 0;
+	border-width: 0px 2px 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+/*=============================================================================
+    Step 0: Get the personal data
+=============================================================================*/
+
+.osbit_step0_info {
+	padding: 2px;
+}
+
+.osbit_step0_radio {
+	padding: 2px;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+.osbit_step0_label, .osbit_step0_field {
+	padding: 2px;
+}
+
+.osbit_step0_label {
+	width: 8em;
+}
+
+/*=============================================================================
+    Step 1: Show course informations
+=============================================================================*/
+
+.osbit_step1_name {
+	padding: 2px;
+}
+
+.osbit_step1_desc, .osbit_step1_desc_tab,
+.osbit_step1_firms_line2_tab, .osbit_step1_firms_line2_lector,
+.osbit_step1_firms_line2_firm, .osbit_step1_firms_line1_tab,
+.osbit_step1_firms_line1_lector, .osbit_step1_firms_line1_frim {
+	padding: 2px;
+}
+
+.osbit_step1_desc_tab, .osbit_step1_firms_line1_tab,
+.osbit_step1_firms_line2_tab {
+	width: 25px;
+}
+
+.osbit_step1_firms_line1_lector, .osbit_step1_firms_line2_lector {
+	width: 40%;
+}
+
+.osbit_step1_firms_line2_tab, .osbit_step1_firms_line2_lector,
+.osbit_step1_firms_line2_firm {
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+/*=============================================================================
+    Step 2: Select courses
+=============================================================================*/
+
+.osbit_step2_email {
+	padding: 2px;
+}
+
+.osbit_step2_time {
+	padding: 2px;
+	text-align: center;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-color: #999;
+}
+
+.osbit_step2_name {
+	padding: 2px 2px 0;
+	border-style: solid;
+	border-color: #DDD;
+	border-width: 0 1px 0 0; 
+	vertical-align: top;
+}
+
+.osbit_step2_room {
+	padding: 0 2px;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+.osbit_step2_registrations, .osbit_step2_registrations_last {
+	padding: 0 2px 2px;
+	border-style: solid;
+	border-color: #DDD;
+	border-width: 0 1px 1px 0
+}
+
+.osbit_step2_registrations_last {
+	border-bottom-color: #999;
+}
+
+/*=============================================================================
+    Step 3: Show selected courses
+=============================================================================*/
+
+.osbit_step3_username {
+	padding: 2px;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #999;
+}
+
+.osbit_step3_time {
+	padding: 2px;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #DDD;
+}
+
+.osbit_step3_name {
+	padding: 2px;
+	border-width: 0;
+}
+
+.osbit_step3_room {
+	padding: 2px;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #DDD;
+}

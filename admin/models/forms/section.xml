@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<form
+	addrulepath="/administrator/components/com_osbit/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="ID"
+			type="hidden"
+		/>
+		<field
+			name="begin"
+			type="text"
+			label="COM_OSBIT_SECTION_FIELD_BEGIN_LABEL"
+			description="COM_OSBIT_SECTION_FIELD_BEGIN_DESC"
+			size="5"
+			required="true"
+			default="HH:MM"
+		/>
+		<field
+			name="end"
+			type="text"
+			label="COM_OSBIT_SECTION_FIELD_END_LABEL"
+			description="COM_OSBIT_SECTION_FIELD_END_DESC"
+			size="5"
+			required="true"
+			default="HH:MM"
+		/>
+	</fieldset>
+</form>
