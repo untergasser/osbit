@@ -2,14 +2,14 @@
 <extension type="component" version="2.5.0" method="upgrade">
 	<name>COM_OSBIT</name>
 	<!-- The following elements are optional and free of formatting constraints -->
-	<creationDate>21.09.2012</creationDate>
+	<creationDate>12.11.2012</creationDate>
 	<author>Mathias Gebhardt</author>
 	<authorEmail>m.gebhardt@gy-mi.de</authorEmail>
 	<authorUrl></authorUrl>
 	<copyright>(C) 2012 Mathias Gebhardt</copyright>
 	<license>GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.5.1</version>
+	<version>0.6.0dev1</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_OSBIT_DESCRIPTION</description>
 	 
@@ -23,16 +23,12 @@
 			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
 		</sql>
 	</uninstall>
-	<update> <!-- Runs on update; New in 1.6 -->
+	<update>
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
 		</schemas>
 	</update>
 	
-	<!-- Site Main File Copy Section -->
-	<!-- Note the folder attribute: This attribute describes the folder
-		to copy FROM in the package to install therefore files copied
-		in this section are copied from /site/ in the package -->
 	<files folder="site">
 		<filename>controller.php</filename>
 		<filename>index.html</filename>
@@ -49,13 +45,8 @@
 	</media>
 	
 	<administration>
-		<!-- Administration Menu Section -->
 		<menu img="../media/com_osbit/images/icon-16-osbit.png">COM_OSBIT_MENU</menu>
 		<submenu>
-			<!--
-				Note that all & must be escaped to &amp; for the file to be valid
-				XML and be parsed by the installer
-			-->
 			<menu link="option=com_osbit&amp;view=users" view="users" alt="OSBIT/Users"
 				img="../media/com_osbit/images/icon-16-users.png">COM_OSBIT_SUBMENU_USERS</menu>
 			<menu link="option=com_osbit&amp;view=courses" view="courses" alt="OSBIT/Courses"
@@ -65,10 +56,6 @@
 			<menu link="option=com_osbit&amp;view=registrations" view="registrations" alt="OSBIT/Registrations"
 				img="../media/com_osbit/images/icon-16-registrations.png">COM_OSBIT_SUBMENU_REGISTRATIONS</menu>
 		</submenu>
-		<!-- Administration Main File Copy Section -->
-		<!-- Note the folder attribute: This attribute describes the folder
-		     to copy FROM in the package to install therefore files copied
-		     in this section are copied from /admin/ in the package -->
 		<files folder="admin">
 			<!-- Admin Main File Copy Section -->
 			<filename>controller.php</filename>
@@ -83,4 +70,8 @@
 			<folder>views</folder>
 		</files>
 	</administration>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="OSBIT Update Site">https://github.com/downloads/mgebhardt/osbit/osbit-update.xml</server>
+	</updateservers>
 </extension>
