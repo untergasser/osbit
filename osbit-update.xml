@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
+	<update>
+      <name>OSBIT</name>
+      <description>A Joomla! component to handle registration for OSBIT.</description>
+      <element>com_osbit</element>
+      <type>component</type>
+      <version>0.6.0dev2</version>
+ 
+      <infourl title="OSBIT URL">https://github.com/mgebhardt/osbit</infourl>
+      <downloads>
+         <downloadurl type="full" format="zip">https://github.com/mgebhardt/osbit/com_osbit-0.6.0dev2.zip</downloadurl>
+      </downloads>
+ 
+      <maintainer>Mathias Gebhardt</maintainer>
+      <maintainerurl>https://github.com/mgebhardt</maintainerurl>
+      <targetplatform name="joomla" version="2.5" />
+   </update>
    <update>
       <name>OSBIT</name>
       <description>A Joomla! component to handle registration for OSBIT.</description>

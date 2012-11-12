@@ -9,7 +9,7 @@
 	<copyright>(C) 2012 Mathias Gebhardt</copyright>
 	<license>GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.6.0dev1</version>
+	<version>0.6.0dev2</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_OSBIT_DESCRIPTION</description>
 	 
