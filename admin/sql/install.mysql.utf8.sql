@@ -1,4 +1,3 @@
-﻿
 DROP TABLE IF EXISTS `#__osbitcourses`;
 CREATE  TABLE `#__osbitcourses` (
   `ID` INT NOT NULL AUTO_INCREMENT ,

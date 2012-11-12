@@ -1,4 +1,4 @@
-﻿
+
 DROP TABLE IF EXISTS `#__osbitcourses`;
 
 DROP TABLE IF EXISTS `#__osbitcoursesection`;

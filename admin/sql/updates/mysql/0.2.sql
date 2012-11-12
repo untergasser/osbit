@@ -1,4 +1,4 @@
-﻿
+
 ALTER TABLE `#__osbitusers` DROP `birthdate`;
 
 ALTER TABLE `#__osbitusers` DROP `hasEvaluated`;
