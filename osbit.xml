@@ -2,14 +2,14 @@
 <extension type="component" version="2.5.0" method="upgrade">
 	<name>COM_OSBIT</name>
 	<!-- The following elements are optional and free of formatting constraints -->
-	<creationDate>13.11.2012</creationDate>
+	<creationDate>14.11.2012</creationDate>
 	<author>Mathias Gebhardt</author>
 	<authorEmail>m.gebhardt@gy-mi.de</authorEmail>
 	<authorUrl></authorUrl>
 	<copyright>(C) 2012 Mathias Gebhardt</copyright>
 	<license>GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.6.0dev4</version>
+	<version>0.6.0</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_OSBIT_DESCRIPTION</description>
 	
