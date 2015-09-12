@@ -16,7 +16,7 @@ jimport('joomla.application.component.view');
 /**
  * Main View
  */
-class OSBITViewMain extends JView
+class OSBITViewMain extends JViewLegacy
 {
 	/**
 	* Main view display method

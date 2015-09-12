@@ -16,7 +16,7 @@ jimport('joomla.application.component.view');
 /**
  * Registration View
  */
-class OSBITViewRegistration extends JView
+class OSBITViewRegistration extends JViewLegacy
 {
 	/**
 	 * display method of user view

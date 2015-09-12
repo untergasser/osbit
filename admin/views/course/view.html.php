@@ -16,7 +16,7 @@ jimport('joomla.application.component.view');
 /**
  * Course View
  */
-class OSBITViewCourse extends JView
+class OSBITViewCourse extends JViewLegacy
 {
 	/**
 	 * display method of course view

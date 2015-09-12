@@ -19,7 +19,7 @@ jimport('joomla.application.component.controller');
  * @package    Joomla
  * @subpackage OSBIT
  */
-class OSBITController extends JController
+class OSBITController extends JControllerLegacy
 {
     /**
      * Method to display the view

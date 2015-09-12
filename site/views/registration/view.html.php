@@ -18,7 +18,7 @@ jimport( 'joomla.html.html' );
  *
  * @package    OSBIT
  */
-class OSBITViewRegistration extends JView
+class OSBITViewRegistration extends JViewLegacy
 {	
     function display($tpl = null)
     {	

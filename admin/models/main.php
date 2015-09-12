@@ -19,7 +19,7 @@ jimport('joomla.application.component.model');
  * @package    Joomla
  * @subpackage OSBIT
  */
-class OSBITModelMain extends JModel
+class OSBITModelMain extends JModelLegacy
 {
 	
 	public function getCourseOverview()

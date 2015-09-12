@@ -15,7 +15,7 @@ jimport('joomla.application.component.model');
 /**
  * User import Model
  */
-class OSBITModelUserimport extends JModel
+class OSBITModelUserimport extends JModelLegacy  
 {
 	
 	protected $ignoreFirstLine;

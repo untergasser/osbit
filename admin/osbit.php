@@ -26,13 +26,13 @@ $document->addStyleDeclaration('.icon-48-registrations {background-image: url(..
 $document->addStyleDeclaration('.icon-32-import {background-image: url(../media/com_osbit/images/icon-32-import.png);}');
 
 // require helper file
-JLoader::register('OSBITHelper', dirname(__FILE__) . DS . 'helpers' . DS . 'osbit.php');
+JLoader::register('OSBITHelper', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'helpers' . DIRECTORY_SEPARATOR . 'osbit.php');
 
 // import joomla controller library
 jimport('joomla.application.component.controller');
  
 // Get an instance of the controller prefixed by OSBIT
-$controller = JController::getInstance('OSBIT');
+$controller = JControllerLegacy::getInstance('OSBIT');
  
 // Perform the Request task
 $controller->execute(JRequest::getCmd('task'));

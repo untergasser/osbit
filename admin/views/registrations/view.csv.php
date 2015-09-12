@@ -15,7 +15,7 @@ jimport('joomla.application.component.view');
 /**
  * View class for a csv export of registrations.
  */
-class OSBITViewRegistrations extends JView
+class OSBITViewRegistrations extends JViewLegacy
 {
 	/**
 	 * Display the view

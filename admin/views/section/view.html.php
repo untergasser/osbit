@@ -16,7 +16,7 @@ jimport('joomla.application.component.view');
 /**
  * Section View
  */
-class OSBITViewSection extends JView
+class OSBITViewSection extends JViewLegacy
 {
 	/**
 	 * display method of section view
