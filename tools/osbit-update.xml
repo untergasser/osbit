@@ -5,13 +5,13 @@
 		<description>A Joomla! component to handle registration for OSBIT.</description>
 		<element>com_osbit</element>
 		<type>component</type>
-		<version>0.6.0</version>
-		<infourl title="OSBIT URL">https://github.com/mgebhardt/osbit</infourl>
+		<version>0.7.0</version>
+		<infourl title="OSBIT URL">https://github.com/untergasser/osbit</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/downloads/mgebhardt/osbit/com_osbit-0.6.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/downloads/untergasser/osbit/com_osbit-0.7.0.zip</downloadurl>
 		</downloads>
-		<maintainer>Mathias Gebhardt</maintainer>
-		<maintainerurl>https://github.com/mgebhardt</maintainerurl>
-		<targetplatform name="joomla" version="2.5" />
+		<maintainer>Andreas Untergasser</maintainer>
+		<maintainerurl>https://github.com/untergasser</maintainerurl>
+		<targetplatform name="joomla" version="3.x" />
 	</update>
 </updates>
