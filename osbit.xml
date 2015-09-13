@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<extension type="component" version="3.4.0" method="upgrade">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
 	<name>COM_OSBIT</name>
 	<!-- The following elements are optional and free of formatting constraints -->
 	<creationDate>12.09.2015</creationDate>
@@ -9,7 +9,7 @@
 	<copyright>(C) 2012 Mathias Gebhardt and Andreas Untergasser</copyright>
 	<license>GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.7.0</version>
+	<version>0.7.1</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_OSBIT_DESCRIPTION</description>
 	
@@ -47,14 +47,10 @@
 	<administration>
 		<menu img="../media/com_osbit/images/icon-16-osbit.png">COM_OSBIT_MENU</menu>
 		<submenu>
-			<menu link="option=com_osbit&amp;view=users" view="users" alt="OSBIT/Users"
-				img="../media/com_osbit/images/icon-16-users.png">COM_OSBIT_SUBMENU_USERS</menu>
-			<menu link="option=com_osbit&amp;view=courses" view="courses" alt="OSBIT/Courses"
-				img="../media/com_osbit/images/icon-16-courses.png">COM_OSBIT_SUBMENU_COURSES</menu>
-			<menu link="option=com_osbit&amp;view=sections" view="sections" alt="OSBIT/Sections"
-				img="../media/com_osbit/images/icon-16-sections.png">COM_OSBIT_SUBMENU_SECTIONS</menu>
-			<menu link="option=com_osbit&amp;view=registrations" view="registrations" alt="OSBIT/Registrations"
-				img="../media/com_osbit/images/icon-16-registrations.png">COM_OSBIT_SUBMENU_REGISTRATIONS</menu>
+			<menu link="option=com_osbit&amp;view=users" view="users" alt="OSBIT/Users" img="../media/com_osbit/images/icon-16-users.png">COM_OSBIT_SUBMENU_USERS</menu>
+			<menu link="option=com_osbit&amp;view=courses" view="courses" alt="OSBIT/Courses" img="../media/com_osbit/images/icon-16-courses.png">COM_OSBIT_SUBMENU_COURSES</menu>
+			<menu link="option=com_osbit&amp;view=sections" view="sections" alt="OSBIT/Sections" img="../media/com_osbit/images/icon-16-sections.png">COM_OSBIT_SUBMENU_SECTIONS</menu>
+			<menu link="option=com_osbit&amp;view=registrations" view="registrations" alt="OSBIT/Registrations" img="../media/com_osbit/images/icon-16-registrations.png">COM_OSBIT_SUBMENU_REGISTRATIONS</menu>
 		</submenu>
 		<files folder="admin">
 			<!-- Admin Main File Copy Section -->
@@ -72,6 +68,6 @@
 	</administration>
 	
 	<updateservers>
-		<server type="extension" priority="1" name="OSBIT Update Site">https://github.com/downloads/untergasser/osbit/osbit-update.xml</server>
+		<server type="extension" priority="1" name="OSBIT Update Site">https://github.com/downloads/mgebhardt/osbit/osbit-update.xml</server>
 	</updateservers>
 </extension>

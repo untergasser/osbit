@@ -13,7 +13,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 // load tooltip behavior
 JHtml::_('behavior.tooltip');
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_osbit'); ?>" method="post" name="adminForm">
+<form action="<?php echo JRoute::_('index.php?option=com_osbit'); ?>" method="post" name="adminForm" id="adminForm">
 	<fieldset id="filter-bar">
 		<div class="filter-search fltlft">
 			<label class="filter-search-lbl" for="filter_search"><?php echo JText::_('JSEARCH_FILTER_LABEL'); ?></label>

@@ -13,7 +13,7 @@ JHtml::_('behavior.tooltip');
 JHtml::_('behavior.formvalidation');
 $params = $this->form->getFieldsets('params');
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_osbit&layout=edit&ID='.(int) $this->item->ID); ?>" method="post" name="adminForm" id="osbit-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_osbit&layout=edit&ID='.(int) $this->item->ID); ?>" method="post" name="adminForm" id="adminForm" class="form-validate">
 	<div class="width-60 fltlft">
 		<fieldset class="adminform">
 			<legend><?php echo JText::_( 'JDETAILS' ); ?></legend>

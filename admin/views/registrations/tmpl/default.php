@@ -15,7 +15,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');
 JHtml::_('behavior.tooltip');
 JHTML::_('script','system/multiselect.js',false,true);
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_osbit&view=registrations'); ?>" method="post" name="adminForm">
+<form action="<?php echo JRoute::_('index.php?option=com_osbit&view=registrations'); ?>" method="post" name="adminForm" id="adminForm">
 	<fieldset id="filter-bar">
 		<div class="filter-search fltlft">
 			<label class="filter-search-lbl" for="filter_search"><?php echo JText::_('JSEARCH_FILTER_LABEL'); ?></label>

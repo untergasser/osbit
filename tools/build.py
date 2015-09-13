@@ -32,7 +32,7 @@ for file in os.listdir('.'):
 
 if not found:
 	print ('Manifest not found!')
-	sys.exit(-1)
+#	sys.exit(-1)
 
 # get name
 name = manifest.getElementsByTagName('name')[0].firstChild.data.lower()
