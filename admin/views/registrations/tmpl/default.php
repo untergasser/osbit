@@ -44,7 +44,7 @@ JHTML::_('script','system/multiselect.js',false,true);
 			</select>
 		</div>
 	</fieldset>
-	<div class="clr"> </div>
+	<div class="clr"> </div><br /><br /><br />
 	<table class="table">
 		<thead><?php echo $this->loadTemplate('head');?></thead>
 		<tfoot><?php echo $this->loadTemplate('foot');?></tfoot>
