@@ -28,7 +28,7 @@ function submitform(pressbutton){
 </script>
 
 <form action="<?php echo JRoute::_('index.php?option=com_osbit'); ?>" method="post" name="comOSBITRegistration">
-	<table class="adminlist osbit_table" cellspacing="0">
+	<table class="table osbit_table" cellspacing="0">
 		<thead><?php echo $this->loadTemplate('head');?></thead>
 		<tfoot><?php echo $this->loadTemplate('foot');?></tfoot>
 		<tbody><?php echo $this->loadTemplate('body_' . ($this->params['registrationState'] != 0 ? $this->pos : 'closed')); ?></tbody>

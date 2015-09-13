@@ -612,8 +612,8 @@ class OSBITModelRegistration extends JModelItem
 			$mailer = JFactory::getMailer();
 			$config = JFactory::getConfig();
 			$sender = array(
-				$config->getValue( 'config.mailfrom' ),
-				$config->getValue( 'config.fromname' ) );
+				$config->get( 'config.mailfrom' ),
+				$config->get( 'config.fromname' ) );
 			$mailer->setSender($sender);
 			$mailer->addRecipient($res->person->email);
 			
@@ -832,8 +832,8 @@ class OSBITModelRegistration extends JModelItem
 		$mailer = JFactory::getMailer();
 		$config = JFactory::getConfig();
 		$sender = array( 
-		    $config->getValue( 'config.mailfrom' ),
-		    $config->getValue( 'config.fromname' ) );
+		    $config->get( 'config.mailfrom' ),
+		    $config->get( 'config.fromname' ) );
 		 
 		$mailer->setSender($sender);
 		$mailer->addRecipient($email);

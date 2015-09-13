@@ -140,7 +140,7 @@ class OSBITModelRegistrations extends JModelList
 			if (stripos($search, 'id:') === 0) {
 				$query->where('r.ID = '.(int) substr($search, 3));
 			} else {
-				$search = $db->Quote('%'.$db->getEscaped($search, true).'%');
+				$search = $db->Quote('%'.$db->escape($search, true).'%');
 				$query->where('(firstName LIKE '.$search.' OR lastName LIKE '.$search.')');
 			}
 		}
@@ -170,7 +170,7 @@ class OSBITModelRegistrations extends JModelList
 		$orderDirn	= $this->state->get('list.direction');
 		if($orderCol == 'lastName' || $orderCol == 'firstName')
 			$orderCol = 'lastName ' . $orderDirn . ', firstName';
-		$query->order($db->getEscaped($orderCol.' '.$orderDirn));
+		$query->order($db->escape($orderCol.' '.$orderDirn));
 		
 		return $query;
 	}

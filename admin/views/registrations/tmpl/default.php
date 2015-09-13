@@ -45,7 +45,7 @@ JHTML::_('script','system/multiselect.js',false,true);
 		</div>
 	</fieldset>
 	<div class="clr"> </div>
-	<table class="adminlist">
+	<table class="table">
 		<thead><?php echo $this->loadTemplate('head');?></thead>
 		<tfoot><?php echo $this->loadTemplate('foot');?></tfoot>
 		<tbody><?php echo $this->loadTemplate('body');?></tbody>

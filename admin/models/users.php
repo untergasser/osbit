@@ -117,7 +117,7 @@ class OSBITModelUsers extends JModelList
 			if (stripos($search, 'id:') === 0) {
 				$query->where('`ID` = '.(int) substr($search, 3));
 			} else {
-				$search = $db->Quote('%'.$db->getEscaped($search, true).'%');
+				$search = $db->Quote('%'.$db->escape($search, true).'%');
 				$query->where('(`firstName` LIKE '.$search.' OR `lastName` LIKE '.$search.')');
 			}
 		}
@@ -139,7 +139,7 @@ class OSBITModelUsers extends JModelList
 		// Add the list ordering clause.
 		$orderCol	= $this->state->get('list.ordering');
 		$orderDirn	= $this->state->get('list.direction');
-		$query->order($db->getEscaped($orderCol.' '.$orderDirn));
+		$query->order($db->escape($orderCol.' '.$orderDirn));
 	
 		return $query;
 	}

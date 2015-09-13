@@ -53,7 +53,7 @@ $count 	= sizeof($this->sections);
 $i = 0;
 if ($count) :
 ?>					
-			<table class="adminlist">
+			<table class="table">
 				<thead>
 					<tr>
 						<th width="20">

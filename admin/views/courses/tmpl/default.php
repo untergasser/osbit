@@ -14,7 +14,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 JHtml::_('behavior.tooltip');
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_osbit'); ?>" method="post" name="adminForm" id="adminForm">
-        <table class="adminlist">
+        <table class="table">
                 <thead><?php echo $this->loadTemplate('head');?></thead>
                 <tfoot><?php echo $this->loadTemplate('foot');?></tfoot>
                 <tbody><?php echo $this->loadTemplate('body');?></tbody>
