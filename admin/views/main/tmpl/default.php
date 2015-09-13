@@ -23,7 +23,7 @@ JHtml::_('behavior.tooltip');
 								<div style="float:left;">
 									<div class="icon">
 										<a href="index.php?option=com_osbit&view=users">
-											<?php echo JHTML::_('image.administrator', "icon-48-users.png", "../media/com_osbit/images/", NULL, NULL, JText::_("COM_OSBIT_SUBMENU_USERS")); ?>
+											<?php echo JHtml::image("../../media/com_osbit/images/icon-48-users.png", JText::_("COM_OSBIT_SUBMENU_USERS"), null, true, false);?>
 											<span><?php echo JText::_("COM_OSBIT_SUBMENU_USERS"); ?></span>
 										</a>
 									</div>
@@ -31,7 +31,7 @@ JHtml::_('behavior.tooltip');
 								<div style="float:left;">
 									<div class="icon">
 										<a href="index.php?option=com_osbit&view=courses">
-											<?php echo JHTML::_('image.administrator', "icon-48-courses.png", "../media/com_osbit/images/", NULL, NULL, JText::_("COM_OSBIT_SUBMENU_COURSES")); ?>
+											<?php echo JHtml::image("../../media/com_osbit/images/icon-48-courses.png", JText::_("COM_OSBIT_SUBMENU_COURSES"), null, true, false);?>
 											<span><?php echo JText::_("COM_OSBIT_SUBMENU_COURSES"); ?></span>
 										</a>
 									</div>
@@ -39,7 +39,7 @@ JHtml::_('behavior.tooltip');
 								<div style="float:left;">
 									<div class="icon">
 										<a href="index.php?option=com_osbit&view=sections">
-											<?php echo JHTML::_('image.administrator', "icon-48-sections.png", "../media/com_osbit/images/", NULL, NULL, JText::_("COM_OSBIT_SUBMENU_SECTIONS")); ?>
+											<?php echo JHtml::image("../../media/com_osbit/images/icon-48-sections.png", JText::_("COM_OSBIT_SUBMENU_SECTIONS"), null, true, false);?>
 											<span><?php echo JText::_("COM_OSBIT_SUBMENU_SECTIONS"); ?></span>
 										</a>
 									</div>
@@ -47,7 +47,7 @@ JHtml::_('behavior.tooltip');
 								<div style="float:left;">
 									<div class="icon">
 										<a href="index.php?option=com_osbit&view=registrations">
-											<?php echo JHTML::_('image.administrator', "icon-48-registrations.png", "../media/com_osbit/images/", NULL, NULL, JText::_("COM_OSBIT_SUBMENU_REGISTRATIONS")); ?>
+											<?php echo JHtml::image("../../media/com_osbit/images/icon-48-registrations.png", JText::_("COM_OSBIT_SUBMENU_REGISTRATIONS"), null, true, false);?>
 											<span><?php echo JText::_("COM_OSBIT_SUBMENU_REGISTRATIONS"); ?></span>
 										</a>
 									</div>
