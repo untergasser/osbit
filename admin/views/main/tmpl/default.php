@@ -114,8 +114,8 @@ endif; ?>
 			<td width="20%" style="vertical-align: top;">
 				<strong>OSBIT</strong><br />
 				<?php echo JText::_('COM_OSBIT_MAIN_COPYRIGHT'); ?><br /><br />
-				<small>Copyright: (c) 2010 - 2011 Mathias Gebhardt<br />
-				E-Mail: <?php echo JHTML::_('email.cloak', 'm.gebhardt@gy-mi.de'); ?><br />
+				<small>Copyright: (c) 2010 - 2015 Mathias Gebhardt and Andreas Untergasser<br />
+				E-Mail: <?php echo JHTML::_('email.cloak', 'a.untergasser@gy-mi.de'); ?><br />
 				Lizenz: GNU/GPL</small>
 			</td>
 		</tr>

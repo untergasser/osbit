@@ -31,7 +31,7 @@ for file in os.listdir('.'):
 		break;
 
 if not found:
-	print 'Manifest not found!'
+	print ('Manifest not found!')
 	sys.exit(-1)
 
 # get name
@@ -52,7 +52,7 @@ folders.append('language')
 
 # create file name for archive
 zipFileName = os.path.join('releases', '{}-{}.zip'.format(name, version))
-#print zipFileName
+# print (zipFileName)
 
 # open archive
 installer = zipfile.ZipFile(zipFileName, mode = 'w')
@@ -80,4 +80,4 @@ finally:
 	# every thing added, than close
 	installer.close()
 	
-print 'successfully created {}'.format(zipFileName)
+print ('successfully created {}'.format(zipFileName))
