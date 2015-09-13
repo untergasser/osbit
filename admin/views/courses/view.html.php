@@ -53,8 +53,8 @@ class OSBITViewCourses extends JViewLegacy
 	protected function addToolBar() 
 	{
 		JToolBarHelper::title(JText::_('COM_OSBIT_COURSES'), 'courses');
-		JToolBarHelper::addNewX('course.add');
-		JToolBarHelper::editListX('course.edit');
-		JToolBarHelper::deleteListX('', 'courses.delete');
+		JToolBarHelper::addNew('course.add');
+		JToolBarHelper::editList('course.edit');
+		JToolBarHelper::deleteList('', 'courses.delete');
 	}
 }

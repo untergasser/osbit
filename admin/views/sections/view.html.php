@@ -51,8 +51,8 @@ class OSBITViewSections extends JViewLegacy
 	protected function addToolBar() 
 	{
 		JToolBarHelper::title(JText::_('COM_OSBIT_SECTIONS'), 'sections');
-		JToolBarHelper::addNewX('section.add');
-		JToolBarHelper::editListX('section.edit');
-		JToolBarHelper::deleteListX('', 'sections.delete');
+		JToolBarHelper::addNew('section.add');
+		JToolBarHelper::editList('section.edit');
+		JToolBarHelper::deleteList('', 'sections.delete');
 	}
 }

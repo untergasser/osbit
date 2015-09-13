@@ -60,9 +60,9 @@ class OSBITViewRegistrations extends JViewLegacy
 	protected function addToolBar() 
 	{
 		JToolBarHelper::title(JText::_('COM_OSBIT_REGISTRATIONS'), 'registrations');
-//		JToolBarHelper::addNewX('registration.add');
-//		JToolBarHelper::editListX('registration.edit');
-		JToolBarHelper::deleteListX('', 'registrations.delete');
+//		JToolBarHelper::addNew('registration.add');
+//		JToolBarHelper::editList('registration.edit');
+		JToolBarHelper::deleteList('', 'registrations.delete');
 		
 		JToolBarHelper::divider();
 		//$bar->appendButton('Popup', 'export', 'JTOOLBAR_EXPORT', 'index.php?option=com_osbit&task=registrations.display&format=csv', 600, 300);
