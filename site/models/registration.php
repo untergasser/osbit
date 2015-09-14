@@ -542,7 +542,7 @@ class OSBITModelRegistration extends JModelItem
 				if(($course1['courseID'] == $course2['courseID']) && ($course1['ID'] != $course2['ID']))
 				{
 					$error = true;
-					JError::raiseNotice('400', $course1[name] . ' und ' . $course2['name']);
+					JError::raiseNotice('400', $course1['name'] . ' und ' . $course2['name']);
 				}
 			}
 		}

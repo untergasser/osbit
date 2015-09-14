@@ -14,7 +14,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 JHtml::_('behavior.tooltip');
 ?>
 <form enctype="multipart/form-data" action="<?php echo JRoute::_('index.php?option=com_osbit&view=userimport');?>" method="post" name="adminForm" id="adminForm">
-	<div class="width-70 fltlft">
+	<div class="fltlft">
 		<fieldset>
 			<span><?php echo JText::_('COM_OSBIT_USERIMPORT_MESSAGE'); ?></span>
 		</fieldset>
