@@ -21,25 +21,25 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 	<td class="osbit_head_nav">
 		<table class="osbit_table" cellspacing="0">
 			<tr class="osbit_head_nav_tr">
-				<td class="osbit_head_left<?php echo $this->pos > 0 ? '_gn' : ''; ?>">
+				<td class="osbit_head_left<?php echo $this->pos == 0 ? '_gn' : ''; ?>">
 					<?php echo JText::_('COM_OSBIT_REGISTRATION_STEP_PERSONAL_DATA')?>
 				</td>
-				<td class="osbit_head_arrow<?php echo $this->pos > 0 ? '_gn' : ''; ?>">
+				<td class="osbit_head_arrow<?php echo $this->pos == 0 ? '_gn' : ''; ?>">
 					&nbsp;
 				</td>
-				<td class="osbit_head_middle<?php echo $this->pos > 1 ? '_gn' : ''; ?>">
+				<td class="osbit_head_middle<?php echo $this->pos == 1 ? '_gn' : ''; ?>">
 					<?php echo JText::_('COM_OSBIT_REGISTRATION_STEP_COURSE_INFOS')?>
 				</td>
-				<td class="osbit_head_arrow<?php echo $this->pos > 1 ? '_gn' : ''; ?>">
+				<td class="osbit_head_arrow<?php echo $this->pos == 1 ? '_gn' : ''; ?>">
 					&nbsp;
 				</td>
-				<td class="osbit_head_middle<?php echo $this->pos > 2 ? '_gn' : ''; ?>">
+				<td class="osbit_head_middle<?php echo $this->pos == 2 ? '_gn' : ''; ?>">
 					<?php echo JText::_('COM_OSBIT_REGISTRATION_STEP_SELECT_COURSES')?>
 				</td>
-				<td class="osbit_head_arrow<?php echo $this->pos > 2 ? '_gn' : ''; ?>">
+				<td class="osbit_head_arrow<?php echo $this->pos == 2 ? '_gn' : ''; ?>">
 					&nbsp;
 				</td>
-				<td class="osbit_head_middle">
+				<td class="osbit_head_middle<?php echo $this->pos == 3 ? '_gn' : ''; ?>">
 					<?php echo JText::_('COM_OSBIT_REGISTRATION_STEP_FINISH')?>
 				</td>
 				<td>

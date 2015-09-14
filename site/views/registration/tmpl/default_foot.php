@@ -13,6 +13,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 <tr>
 	<td class="osbit_foot">
-		Copyright (c) 2010 - 2011 Mathias Gebhardt
+		Copyright (c) 2010 - 2015 Mathias Gebhardt und Andreas Untergasser
 	</td>
 </tr>

@@ -449,7 +449,7 @@ class OSBITModelRegistration extends JModelItem
 		$password = JRequest::getString('code');
 		
 		// Check the user
-		//@TODO: Check warning "Creating default object from empty value."
+		if (!isset($res)) $res = new stdClass();
 		$res->person = $this->getPerson($userID);
 		if(!$this->checkUser($userID, $password))
 			die('com_osbit - getRegistration - Hacking');
