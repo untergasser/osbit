@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS `#__osbitcourses`;
 CREATE  TABLE `#__osbitcourses` (
   `ID` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(100) NOT NULL ,
-  `description` TINYTEXT NOT NULL ,
+  `description` TEXT NOT NULL ,
   `lector1` VARCHAR(50) NOT NULL ,
   `lector1Firm` VARCHAR(100) NULL ,
   `lector2` VARCHAR(50) NULL ,
