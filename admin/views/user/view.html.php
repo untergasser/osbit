@@ -59,39 +59,23 @@ class OSBITViewUser extends JViewLegacy
 		$user = JFactory::getUser();
 		$userId = $user->id;
 		$isNew = $this->item->ID == 0;
-		$canDo = OSBITHelper::getUserActions($this->item->ID);
 		JToolBarHelper::title($isNew ? JText::_('COM_OSBIT_USER_NEW') : JText::_('COM_OSBIT_USER_EDIT'), 'users');
-		// Built the actions for new and existing records.
-		if ($isNew) 
-		{
-			// For new records, check the create permission.
-			if ($canDo->get('core.create')) 
-			{
-				JToolBarHelper::apply('user.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('user.save', 'JTOOLBAR_SAVE');
-				JToolBarHelper::custom('user.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-			}
-			JToolBarHelper::cancel('user.cancel', 'JTOOLBAR_CANCEL');
-		}
-		else
-		{
-			if ($canDo->get('core.edit'))
-			{
-				// We can save the new record
-				JToolBarHelper::apply('user.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('user.save', 'JTOOLBAR_SAVE');
 
-				// We can save this record, but check the create permission to see if we can return to make a new one.
-				if ($canDo->get('core.create')) 
-				{
-					JToolBarHelper::custom('user.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-				}
+		if (JFactory::getUser()->authorise('core.manage', 'com_osbit')) {
+			JToolBarHelper::apply('user.apply', 'JTOOLBAR_APPLY');
+			JToolBarHelper::save('user.save', 'JTOOLBAR_SAVE');
+			JToolBarHelper::custom('user.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
+		
+			// Built the actions for new and existing records.
+			if ($isNew)
+			{
+				JToolBarHelper::cancel('user.cancel', 'JTOOLBAR_CANCEL');
 			}
-			if ($canDo->get('core.create')) 
+			else
 			{
 				JToolBarHelper::custom('user.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
+				JToolBarHelper::cancel('user.cancel', 'JTOOLBAR_CLOSE');
 			}
-			JToolBarHelper::cancel('user.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 	/**

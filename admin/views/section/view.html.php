@@ -59,39 +59,23 @@ class OSBITViewSection extends JViewLegacy
 		$user = JFactory::getUser();
 		$userId = $user->id;
 		$isNew = $this->item->ID == 0;
-		$canDo = OSBITHelper::getSectionActions($this->item->ID);
 		JToolBarHelper::title($isNew ? JText::_('COM_OSBIT_SECTION_NEW') : JText::_('COM_OSBIT_SECTION_EDIT'), 'sections');
-		// Built the actions for new and existing records.
-		if ($isNew) 
-		{
-			// For new records, check the create permission.
-			if ($canDo->get('core.create')) 
-			{
-				JToolBarHelper::apply('section.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('section.save', 'JTOOLBAR_SAVE');
-				JToolBarHelper::custom('section.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-			}
-			JToolBarHelper::cancel('section.cancel', 'JTOOLBAR_CANCEL');
-		}
-		else
-		{
-			if ($canDo->get('core.edit'))
-			{
-				// We can save the new record
-				JToolBarHelper::apply('section.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('section.save', 'JTOOLBAR_SAVE');
 
-				// We can save this record, but check the create permission to see if we can return to make a new one.
-				if ($canDo->get('core.create')) 
-				{
-					JToolBarHelper::custom('section.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-				}
+		if (JFactory::getUser()->authorise('core.manage', 'com_osbit')) {
+			JToolBarHelper::apply('section.apply', 'JTOOLBAR_APPLY');
+			JToolBarHelper::save('section.save', 'JTOOLBAR_SAVE');
+			JToolBarHelper::custom('section.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
+		
+			// Built the actions for new and existing records.
+			if ($isNew)
+			{
+				JToolBarHelper::cancel('section.cancel', 'JTOOLBAR_CANCEL');
 			}
-			if ($canDo->get('core.create')) 
+			else
 			{
 				JToolBarHelper::custom('section.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
+				JToolBarHelper::cancel('section.cancel', 'JTOOLBAR_CLOSE');
 			}
-			JToolBarHelper::cancel('section.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 	/**

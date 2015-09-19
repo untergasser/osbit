@@ -30,7 +30,7 @@ class OSBITModelUser extends JModelAdmin
 	protected function allowEdit($data = array(), $key = 'ID')
 	{
 		// Check specific edit permission then general edit permission.
-		return JFactory::getUser()->authorise('core.edit', 'com_osbit.user.'.((int) isset($data[$key]) ? $data[$key] : 0)) or parent::allowEdit($data, $key);
+		return JFactory::getUser()->authorise('core.manage', 'com_osbit');
 	}
 	/**
 	 * Returns a reference to the a Table object, always creating it.

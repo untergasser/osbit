@@ -27,42 +27,4 @@ class OSBITTableSection extends JTable
 	{
 		parent::__construct('#__osbitcoursesections', 'ID', $db);
 	}
-	
-	/**
-	 * Method to compute the default name of the asset.
-	 * The default name is in the form `table_name.id`
-	 * where id is the value of the primary key of the table.
-	 *
-	 * @return	string
-	 * @since	1.6
-	 */
-	protected function _getAssetName()
-	{
-		$k = $this->_tbl_key;
-		return 'com_osbit.section.'.(int) $this->$k;
-	}
-
-	/**
-	 * Method to return the title to use for the asset table.
-	 *
-	 * @return	string
-	 * @since	1.6
-	 */
-	protected function _getAssetTitle()
-	{
-		return $this->begin . ' - ' . $this->end;
-	}
-
-	/**
-	 * Get the parent asset id for the record
-	 *
-	 * @return	int
-	 * @since	1.6
-	 */
-	protected function _getAssetParentId($table = null, $id = null)
-	{
-		$asset = JTable::getInstance('Asset');
-		$asset->loadByName('com_osbit');
-		return $asset->ID;
-	}
 }

@@ -44,30 +44,5 @@ class OSBITControllerRegistrations extends JControllerAdmin
 	public function export()
 	{
 		$this->setRedirect(JRoute::_('index.php?option=com_osbit&task=registrations.display&format=csv', false));
-		/*
-		$app = JFactory::getApplication();
-		$app->enqueueMessage('Export');
-		
-		// Check for request forgeries.
-		JSession::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
-		
-		$model = $this->getModel('Registrations', 'OSBITModel');
-		$return = $model->export();
-		if ($return === false)
-		{
-			// Reorder failed.
-			//COM_OSBIT_ERROR_REGISTRATION_EXPORT
-			$message = JText::sprintf('Kurse: %s', $model->getError());
-			$this->setRedirect(JRoute::_('index.php?option=com_osbit&view=registrations', false), $message, 'error');
-			return false;
-		}
-		else
-		{
-			// Reorder succeeded.
-			$message = JText::_('COM_OSBIT_REGISTRATION_EXPORT');
-			$this->setRedirect(JRoute::_('index.php?option=com_osbit&view=registrations', false), $message);
-			return true;
-		}
-		*/
 	}
 }

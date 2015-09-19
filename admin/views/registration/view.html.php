@@ -59,39 +59,23 @@ class OSBITViewRegistration extends JViewLegacy
 		$user = JFactory::getUser();
 		$userId = $user->id;
 		$isNew = $this->item->ID == 0;
-		$canDo = OSBITHelper::getUserActions($this->item->ID);
 		JToolBarHelper::title($isNew ? JText::_('COM_OSBIT_REGISTRATION_NEW') : JText::_('COM_OSBIT_REGISTRATION_EDIT'), 'registrations');
-		// Built the actions for new and existing records.
-		if ($isNew) 
-		{
-			// For new records, check the create permission.
-			if ($canDo->get('core.create')) 
-			{
-				JToolBarHelper::apply('registration.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('registration.save', 'JTOOLBAR_SAVE');
-				JToolBarHelper::custom('registration.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-			}
-			JToolBarHelper::cancel('registration.cancel', 'JTOOLBAR_CANCEL');
-		}
-		else
-		{
-			if ($canDo->get('core.edit'))
-			{
-				// We can save the new record
-				JToolBarHelper::apply('registration.apply', 'JTOOLBAR_APPLY');
-				JToolBarHelper::save('registration.save', 'JTOOLBAR_SAVE');
 
-				// We can save this record, but check the create permission to see if we can return to make a new one.
-				if ($canDo->get('core.create')) 
-				{
-					JToolBarHelper::custom('registration.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
-				}
+		if (JFactory::getUser()->authorise('core.manage', 'com_osbit')) {
+			JToolBarHelper::apply('registration.apply', 'JTOOLBAR_APPLY');
+			JToolBarHelper::save('registration.save', 'JTOOLBAR_SAVE');
+			JToolBarHelper::custom('registration.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
+
+			// Built the actions for new and existing records.
+			if ($isNew) 
+			{
+				JToolBarHelper::cancel('registration.cancel', 'JTOOLBAR_CANCEL');
 			}
-			if ($canDo->get('core.create')) 
+			else
 			{
 				JToolBarHelper::custom('registration.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
+				JToolBarHelper::cancel('registration.cancel', 'JTOOLBAR_CLOSE');
 			}
-			JToolBarHelper::cancel('registration.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 	/**
