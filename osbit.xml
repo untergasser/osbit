@@ -9,7 +9,7 @@
 	<copyright>(C) 2012 Mathias Gebhardt and Andreas Untergasser</copyright>
 	<license>GNU/GPL</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.8.0</version>
+	<version>0.8.1</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>COM_OSBIT_DESCRIPTION</description>
 	
@@ -56,6 +56,8 @@
 			<!-- Admin Main File Copy Section -->
 			<filename>controller.php</filename>
 			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
 			<filename>osbit.php</filename>
 			<folder>controllers</folder>
 			<folder>helpers</folder>

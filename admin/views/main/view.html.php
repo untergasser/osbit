@@ -52,12 +52,11 @@ class OSBITViewMain extends JViewLegacy
 	*/
 	protected function addToolBar() 
 	{
-// 		$canDo = OSBITHelper::getActions();
 		JToolBarHelper::title(JText::_('COM_OSBIT_MAIN'), 'osbit');
-// 		if ($canDo->get('core.admin'))
-// 		{
+
+		if (JFactory::getUser()->authorise('core.admin', 'com_osbit')) {
 			JToolBarHelper::divider();
 			JToolBarHelper::preferences('com_osbit');
-// 		}
+ 		}
 	}
 }
